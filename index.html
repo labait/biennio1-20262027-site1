@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#f7f6f2" />
+    <meta name="description" content="Sono Antonio Molinari: sviluppo web con CMS open source e Ruby on Rails, docenza di tecnologie e Web design alla LABA di Brescia." />
+    <title>Antonio Molinari · Sviluppo web e docenza</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style type="text/tailwindcss">
+      @theme {
+        --color-paper: oklch(0.975 0.006 85);
+        --color-ink: oklch(0.25 0.012 60);
+        --color-muted: oklch(0.47 0.016 60);
+        --color-line: oklch(0.86 0.013 85);
+        --color-orange: oklch(0.64 0.19 40);
+        --color-orange-dark: oklch(0.5 0.16 40);
+        --color-peach: oklch(0.935 0.036 55);
+        --font-sans: "Helvetica Neue", Helvetica, Arial, sans-serif;
+      }
+      @layer base {
+        body { margin: 0; }
+        ::selection { background: var(--color-peach); color: var(--color-ink); }
+        a:focus-visible {
+          outline: 2px solid var(--color-orange-dark);
+          outline-offset: 6px;
+          border-radius: 2px;
+        }
+      }
+    </style>
+  </head>
+  <body class="bg-paper font-sans text-ink antialiased">
+    <a href="#contenuto" class="fixed left-4 top-4 z-50 -translate-y-24 bg-ink px-5 py-3 text-paper focus:translate-y-0">Salta al contenuto</a>
+
+    <div class="mx-auto max-w-[1200px] px-6 sm:px-10 lg:px-16">
+      <header class="flex items-center justify-between gap-6 py-7 sm:py-10">
+        <a href="#" aria-label="Antonio Molinari, inizio pagina" class="flex items-center gap-3 font-semibold tracking-tight">
+          <span class="flex size-9 items-center justify-center rounded-full bg-ink text-sm text-paper" aria-hidden="true">am.</span>
+          <span>Antonio Molinari<span class="text-orange">.</span></span>
+        </a>
+        <nav aria-label="Navigazione principale" class="flex items-center gap-7 text-sm">
+          <a href="#attivita" class="hidden text-muted hover:text-ink sm:block">Cosa faccio</a>
+          <a href="#contatti" class="group flex items-center gap-2 font-medium">Scrivimi <span aria-hidden="true" class="text-orange transition-transform duration-200 group-hover:-translate-y-0.5 group-hover:translate-x-0.5 motion-reduce:transition-none">↗</span></a>
+        </nav>
+      </header>
+
+      <main id="contenuto">
+        <section aria-labelledby="saluto" class="relative grid items-center gap-8 pb-14 pt-14 sm:pb-20 sm:pt-20 md:grid-cols-[1fr_240px] lg:gap-14 lg:pt-24">
+          <div>
+            <p class="mb-6 flex items-center gap-2 text-xs font-medium uppercase tracking-[0.17em] text-muted">
+              <span class="size-1.5 rounded-full bg-orange" aria-hidden="true"></span>
+              Sviluppo web &amp; docenza
+            </p>
+            <h1 id="saluto" class="text-[clamp(3.6rem,8.5vw,6.9rem)] font-semibold leading-[0.98] tracking-[-0.065em]">
+              Ciao, sono<br />Antonio<span class="text-orange">.</span>
+            </h1>
+            <p class="mt-7 max-w-md text-lg leading-relaxed text-muted sm:text-xl">Piacere di conoscerti.<br />Anche se, per ora, solo in pixel.</p>
+          </div>
+
+          <div aria-hidden="true" class="relative hidden md:block">
+            <svg viewBox="0 0 260 260" class="w-full -rotate-12 text-orange" fill="currentColor">
+              <g>
+                <ellipse cx="130" cy="130" rx="48" ry="122" />
+                <ellipse cx="130" cy="130" rx="48" ry="122" transform="rotate(45 130 130)" />
+                <ellipse cx="130" cy="130" rx="48" ry="122" transform="rotate(90 130 130)" />
+                <ellipse cx="130" cy="130" rx="48" ry="122" transform="rotate(135 130 130)" />
+              </g>
+              <g fill="none" stroke="var(--color-ink)" stroke-linecap="round" stroke-width="7">
+                <path d="M102 105v14M154 105v14" />
+                <path d="M99 145q29 33 60 0" />
+              </g>
+            </svg>
+            <p class="mt-5 rotate-[-5deg] text-center text-sm text-muted">Una testa, tante idee.</p>
+          </div>
+        </section>
+
+        <section aria-labelledby="presentazione" class="grid gap-5 border-t border-line py-10 sm:py-14 md:grid-cols-[220px_1fr] lg:gap-10">
+          <h2 id="presentazione" class="text-sm font-medium text-muted">Due parole su di me</h2>
+          <div class="max-w-[650px]">
+            <p class="text-[clamp(1.4rem,2.5vw,1.8rem)] font-medium leading-[1.5] tracking-[-0.025em]">Mi piace costruire cose per il web.<br class="hidden sm:block" /> E condividere quello che imparo.</p>
+            <p class="mt-5 text-base leading-[1.8] text-muted sm:text-lg">Ho un'azienda che si occupa di sviluppo web con CMS open source e Ruby on Rails. Trasformo idee ed esigenze in siti e applicazioni, con attenzione alla semplicità, al design e alle persone che li useranno.</p>
+            <p class="mt-4 text-base leading-[1.8] text-muted sm:text-lg">Accanto allo sviluppo, insegno tecnologie e Web design all'Accademia di Belle Arti <span class="font-medium text-ink">LABA di Brescia</span>. Un modo per mettere in dialogo codice e creatività, dentro e fuori dall'aula.</p>
+          </div>
+        </section>
+
+        <section id="attivita" aria-labelledby="attivita-titolo" class="grid scroll-mt-8 gap-5 border-t border-line pb-12 pt-10 sm:pb-16 sm:pt-14 md:grid-cols-[220px_1fr] lg:gap-10">
+          <h2 id="attivita-titolo" class="text-sm font-medium text-muted">Quello che faccio</h2>
+          <ol class="min-w-0">
+            <li class="grid grid-cols-[32px_1fr] gap-3 border-b border-line pb-6 sm:grid-cols-[40px_1fr]">
+              <span aria-hidden="true" class="pt-1 text-xs text-orange-dark">01</span>
+              <div>
+                <h3 class="text-xl font-medium tracking-tight sm:text-2xl">Sviluppo web su CMS open source</h3>
+                <p class="mt-2 max-w-lg text-base leading-relaxed text-muted">Siti su misura, facili da gestire e pensati per crescere insieme a un progetto.</p>
+              </div>
+            </li>
+            <li class="grid grid-cols-[32px_1fr] gap-3 border-b border-line py-6 sm:grid-cols-[40px_1fr]">
+              <span aria-hidden="true" class="pt-1 text-xs text-orange-dark">02</span>
+              <div>
+                <h3 class="text-xl font-medium tracking-tight sm:text-2xl">Applicazioni con Ruby on Rails</h3>
+                <p class="mt-2 max-w-lg text-base leading-relaxed text-muted">Strumenti e applicazioni web per dare forma alle idee e semplificare il lavoro.</p>
+              </div>
+            </li>
+            <li class="grid grid-cols-[32px_1fr] gap-3 pt-6 sm:grid-cols-[40px_1fr]">
+              <span aria-hidden="true" class="pt-1 text-xs text-orange-dark">03</span>
+              <div>
+                <h3 class="text-xl font-medium tracking-tight sm:text-2xl">Docenza di tecnologie e Web design</h3>
+                <p class="mt-2 max-w-lg text-base leading-relaxed text-muted">Alla LABA di Brescia, tra progettazione, sperimentazione e cultura del web.</p>
+              </div>
+            </li>
+          </ol>
+        </section>
+
+        <section id="contatti" aria-labelledby="contatti-titolo" class="mb-10 scroll-mt-8 rounded-[1.5rem] bg-peach px-6 py-9 sm:mb-14 sm:px-10 sm:py-12">
+          <div class="flex flex-col justify-between gap-8 md:flex-row md:items-end">
+            <div class="min-w-0">
+              <p class="mb-3 text-sm text-orange-dark">Le belle idee iniziano con un ciao.</p>
+              <h2 id="contatti-titolo" class="text-3xl font-semibold tracking-[-0.04em] sm:text-4xl">Facciamo due chiacchiere?</h2>
+              <a href="mailto:antoniomolinari@me.com" class="mt-5 inline-block break-all text-[clamp(1.1rem,3vw,1.6rem)] font-medium underline decoration-orange/50 underline-offset-8 hover:decoration-ink">antoniomolinari@me.com</a>
+            </div>
+            <a href="mailto:antoniomolinari@me.com" aria-label="Scrivi un'email ad Antonio" class="flex size-14 shrink-0 items-center justify-center rounded-full bg-ink text-paper transition-colors duration-200 hover:bg-orange-dark motion-reduce:transition-none">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+                <path d="M5 19 19 5M5 5h14v14" />
+              </svg>
+            </a>
+          </div>
+        </section>
+      </main>
+
+      <footer class="flex flex-col justify-between gap-2 pb-7 text-xs text-muted sm:flex-row sm:pb-9">
+        <p>Antonio Molinari · Sviluppatore e docente</p>
+        <p>Codice, creatività e un po' di curiosità.</p>
+      </footer>
+    </div>
+  </body>
+</html>
